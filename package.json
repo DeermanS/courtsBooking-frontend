@@ -1,8 +1,14 @@
 {
   "name": "my-app",
   "version": "0.1.0",
+  "proxy": "http://localhost:3000",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@fontsource/roboto": "^5.0.8",
+    "@mui/icons-material": "^5.15.4",
+    "@mui/material": "^5.15.4",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -19,8 +25,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --watchAll --coverage",
     "eject": "react-scripts eject"
+    
   },
   "eslintConfig": {
     "extends": [
@@ -40,4 +47,5 @@
       "last 1 safari version"
     ]
   }
+  
 }

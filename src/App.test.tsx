@@ -1,9 +1,12 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import '@testing-library/jest-dom';
+import '@testing-library/jest-dom/extend-expect';
+import { render, screen } from '@testing-library/react'
+import CourtBooking from './App';
+const TestComponent = ()=>{return (<p>test Component</p>)}
+test("Example 1 renders successfully", () => {
+    render(<CourtBooking/>);
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+    const element = screen.getByText(/currentUserLevel: participant/i);
+
+    expect(element).toBeInTheDocument();
+})
