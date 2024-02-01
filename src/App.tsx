@@ -341,21 +341,6 @@ function CourtBooking() {
   // Edit when sampleData delete!!!
   const [allPlayerLists,setAllPlayerLists] = useState<PlayerList[]>(samplePlayerListData);
   const [feeStatus,setFeeStatus] = useState<FeeStatus[]>(sampleFeeStatusData);
-  
-  // Add third sample data
-  // let currentTime = new Date();
-  // const newSampleCourtData = {
-  //   courtId: courts.length + 1,
-  //   time: currentTime.toLocaleString(),
-  //   location: "Cosports Badminton",
-  //   fee: "$15",
-  //   image:"https://lh5.googleusercontent.com/p/AF1QipN78ril9zsqLUGcmjDMVi-4yPrOWzeh3KfQuK4F=w203-h152-k-no",
-  // };
-  // useEffect(() => {
-  //   setCourts([...courts, newSampleCourtData])
-  //   console.log("triggerd")
-  //   console.log("111")
-  // },[])
 
    // Set userLevel
    const setUserLevel=() => {
